@@ -27,7 +27,9 @@ services:
     image: httpd:alpine
     hostname: context
     container_name: fiware-ld-context
+    networks:
+        - default
     volumes: 
-       - "/home/usuario/contexts:/usr/local/apache2/htdoscs"
+       - "/home/usuario/contexts:/usr/local/apache2/htdocs"
     ports:
         - "3004:80"
