@@ -1,0 +1,5 @@
+{
+  "id": "urn:ngsi-ld:Person:person1"
+  "type": "Person"
+  "name": "Pedro",
+  "@context": "
