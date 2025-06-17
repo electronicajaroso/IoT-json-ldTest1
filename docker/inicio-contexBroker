@@ -1,0 +1,2 @@
+docker pull mongo:4.2
+docker pull fiware/orion-ld
