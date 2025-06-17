@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "Person": "https://schema.org/Person",
+    "name": "https://schema.org/Text"
+  }
+}
