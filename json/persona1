@@ -2,4 +2,5 @@
   "id": "urn:ngsi-ld:Person:person1"
   "type": "Person"
   "name": "Pedro",
-  "@context": "
+  "@context": "https://github.com/electronicajaroso/IoT-json-ldTest1/blob/74a01270159b27fe672761f9e2c2b5c8f1805cc8/datamodels/context1.jsonld"
+}
