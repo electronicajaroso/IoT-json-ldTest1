@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.7",
+  "modelTags": "",
+  "$id": "https://github.com/electronicajaroso/IoT-json-ldTest1/new/main/datamodels/mysquema.json",
+  "title": "mi esquema de edificio, sensor y propietario",
+  "description": "This entity contains a harmonised description of a generic crop. This entity is primarily associated with the agricultural vertical and related IoT applications.",
+  "type": "object",
