@@ -1,5 +1,7 @@
 {
   "@context": {
+    "type": "@type",
+    "id": "@id",
     "Person": "https://schema.org/Person",
     "name": "https://schema.org/Text"
   }
