@@ -2,7 +2,11 @@
   "@context": {
     "type": "@type",
     "id": "@id",
-    "Person": "https://schema.org/Person",
-    "name": "https://schema.org/Text"
+    
+    "schema": "https://schema.org",
+    
+    "Person": "shema:Person",
+    
+    "name": "schema:Text"
   }
 }
