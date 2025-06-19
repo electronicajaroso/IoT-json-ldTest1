@@ -6,3 +6,22 @@
   "title": "mi esquema de edificio, sensor y propietario",
   "description": "This entity contains a harmonised description of a generic crop. This entity is primarily associated with the agricultural vertical and related IoT applications.",
   "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/Device-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Device"
+          ],
+          "description": "Property. NGSI Entity type. It has to be Device"
+          
