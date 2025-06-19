@@ -6,7 +6,18 @@
     "schema": "https://schema.org",
     
     "Person": "shema:Person",
-    
+    "Device": "https://smartdatamodels.org/dataModel.Device/Device",
+    "DeviceMeasurement": "https://smartdatamodels.org/dataModel.Device/DeviceMeasurement",
+
+    "category": "https://smartdatamodels.org/dataModel.Device/category",
+    "controlledAsset": "https://smartdatamodels.org/dataModel.Device/controlledAsset",
+    "dateFirstUsed": "https://smartdatamodels.org/dataModel.Device/dateFirstUsed",
+    "dateInstalled": "https://smartdatamodels.org/dataModel.Device/dateInstalled",
+    "dateLastCalibration": "https://smartdatamodels.org/dataModel.Device/dateLastCalibration",
+    "dateLastValueReported": "https://smartdatamodels.org/dataModel.Device/dateLastValueReported",
+    "ipAddress": "https://smartdatamodels.org/dataModel.Device/ipAddress",
+    "protocolId": "https://smartdatamodels.org/dataModel.Device/protocolId",
+    "temperature": "https://smartdatamodels.org/dataModel.Device/temperature",
     "name": "schema:Text"
   }
 }
