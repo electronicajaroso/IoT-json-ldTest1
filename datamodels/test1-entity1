@@ -4,6 +4,6 @@
   "name":{
     "type":"Property",
     "value": "Pedro"
-    }
+    },
     "@context": "http://context/context1.jsonld"
 }
