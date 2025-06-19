@@ -2,10 +2,18 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://smart-data-models.github.io/dataModel.Device/device-schema.json",
   "$schemaVersion": "0.0.7",
-  "title": " Smart data Models - Device  Commons schema",
+  "title": " Smart data Models - EndPoint (sensor o actuador) schema",
   "description": "Common definitions to describe Device and Device Model schemas",
-  "definitions": {
-    "CategoryType": {
+  "type":"object",
+  "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Device"
+          ],
+          "description": "Property. NGSI Entity type. It has to be Device"
+        },
+      "Category": {
       "type": "array",
       "description": "Property. Model:'https://schema.org/Text'. Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. Raw category will be deprecated use deviceCategory instead to avoid conflict with other aqttributes named category",
       "items": {
@@ -26,7 +34,7 @@
         ]
       }
     },
-     "ControlledPropertyType": {
+     "ControlledProperty": {
       "type": "array",
       "description": "Property. Model:'https://schema.org/Text'. Anything that can be sensed, measured or controlled by. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'",
       "items": {
@@ -85,17 +93,6 @@
           "windDirection",
           "windSpeed"
         ]
-      }
-    },
-     "EndPoint": {
-      "type": "object",
-      "properties": {
-        "category": {
-          "$ref": "#/definitions/CategoryType"
-        },
-        "controlledProperty": {
-          "$ref": "#/definitions/ControlledPropertyType"
-        }
       }
     }
   }
