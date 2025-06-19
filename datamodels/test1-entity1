@@ -1,0 +1,9 @@
+{
+  "id": "urn:ngsi-ld:Person:per001",
+  "type": "Person",
+  "name":{
+    "type":"Property",
+    "value": "Pedro"
+    }
+    "@context": "http://context/context1.jsonld"
+}
