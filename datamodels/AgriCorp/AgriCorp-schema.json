@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.7",
+  "modelTags": "",
+  "$id": "https://context/AgriCrop-schema.json",
+  "title": "Smart Data Models - Agri Food",
+  "description": "This entity contains a harmonised description of a generic crop. This entity is primarily associated with the agricultural vertical and related IoT applications.",
+  "type": "object",
+     {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "AgriCrop"
+          ],
+          "description": "Property. NGSI Entity Type. it has to be AgriCrop"
+        },
+        "name": {
+           "description": "Property. name Owner (Person or Organization) of the item",
+              "type": "string",
+         },
+        "location": {
+          "type": "geo:json",
+          "description": "location of agroCorp, ie e object with type point.. coordinates [W/E, N/S]
+        },
+         "refOwner": {
+           "description": "Relationship. Owner (Person or Organization) of the item",
+              "type": "string",
+              "format": "uri",
+            },
+      "refDevicesSoC": {
+          "type": "array",
+          "description": "Relationship. Reference to the IoT devices associated with this parcel",
+          "items": {
+              "description": "RelationShip. Corp Identifier format of any NGSI entity where Device is fitted",
+              "type": "string",
+              "format": "uri",
+            },
+          }
+        },
+  "required":["id", "type"],
+  "additionalProperties": false
+  }
