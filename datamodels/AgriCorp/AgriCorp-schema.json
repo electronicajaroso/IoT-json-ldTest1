@@ -6,21 +6,27 @@
   "title": "Smart Data Models - Agri Food",
   "description": "This entity contains a harmonised description of a generic crop. This entity is primarily associated with the agricultural vertical and related IoT applications.",
   "type": "object",
-     {
-      "properties": {
+    "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "AgriCrop"
+            "AgriCorp"
           ],
           "description": "Property. NGSI Entity Type. it has to be AgriCrop"
         },
+        "id":{
+          "type": "string",
+          "format": "uri",
+          "description": "Property. Identifier format of any NGSI entity"
+        },
         "name": {
            "description": "Property. name Owner (Person or Organization) of the item",
-              "type": "string",
+              "type": "string"
          },
         "location": {
           "type": "object",
+          "required": ["type", "coordinates"],
+          "description": "location of agroCorp, ie e object with type point.. coordinates [W/E, N/S]",
           "properties": {
              "type": {
                   "type": "string",
@@ -33,15 +39,14 @@
                   "minItems": 2,
                   "items": {
                     "type": "number"
-                  },
-                },  
-          "description": "location of agroCorp, ie e object with type point.. coordinates [W/E, N/S]"
-          }
+                  }
+                } 
+             }
         },
          "refOwner": {
            "description": "Relationship. Owner (Person or Organization) of the item",
               "type": "string",
-              "format": "uri",
+              "format": "uri"
             },
       "refDevicesSoC": {
           "type": "array",
@@ -49,8 +54,8 @@
           "items": {
               "description": "RelationShip. Corp Identifier format of any NGSI entity where Device is fitted",
               "type": "string",
-              "format": "uri",
-            },
+              "format": "uri"
+            }
           }
         },
   "required":["id", "type"],
