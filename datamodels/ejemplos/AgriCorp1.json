@@ -6,5 +6,7 @@
       "type": "Point",
       "coordenate": [10,10]
     }
+    "refOwner": "urn:ngsi-ld:Owner:owner001",
+    "refDevicesSoC": ["urn:ngsi-ld:DeviceSoc:devSoc001"]
 }
       
