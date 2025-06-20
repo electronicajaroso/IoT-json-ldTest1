@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://context/Owner-schema.json",
+  "$schemaVersion": "0.0.7",
+  "title": " Smart data Models - Owner schema",
+  "description": "Common definitions to describe Device and Device Model schemas",
+  "type":"object",
+  "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Owner"
+          ],
+          "description": "Property. NGSI Entity type. It has to be Device"
+        },
+    "id":{
+          "type": "string",
+          "format": "uri",
+          "description": "Property. Identifier format of any NGSI entity"
+        },
+    "Name": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text. onwner name"
+        },
+    
+    "refAgriCorps": {
+          "description": "RelationShip. agricorps Identifier format of any NGSI entity owner",
+          "type":"array"
+          "items":{
+            "type": "string",
+            "format": "uri",
+          }
+    },
+    "required":["id", "type"],
+  "additionalProperties": false
+  }
