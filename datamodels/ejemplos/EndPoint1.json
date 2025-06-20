@@ -2,7 +2,7 @@
     "id": "urn:ngsi-ld:EndPoint:endp001",
     "type": "EndPoint",
     "category": "sensor",
-    "controlledProperty": ["temperature"],
+    "controlledProperty": "temperature",
     "value": 3.3,
     "dateObserved":"2016-11-30T07:00:00.00Z",
     "refDeviceSoc": "urn:ngsi-ld:DeviceSoc:devSoc001"
