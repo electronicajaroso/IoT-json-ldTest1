@@ -40,17 +40,17 @@
     "refCorp": {
           "description": "RelationShip. Corp Identifier format of any NGSI entity where Device is fitted",
           "type": "string",
-          "format": "uri",
+          "format": "uri"
           },
     "refEndPoints": {
           "description": "RelationShip. EndPoint Identifier format of any NGSI entity provide data to device",
-          "type":"array"
+          "type":"array",
           "items":{
             "type": "string",
-            "format": "uri",
+            "format": "uri"
           }
-    },
-    "required":["id", "type"],
+    }
+  },
+  "required":["id", "type"],
   "additionalProperties": false
-  }
-    
+}
