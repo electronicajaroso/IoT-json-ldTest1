@@ -25,11 +25,12 @@
     
     "refAgriCorps": {
           "description": "RelationShip. agricorps Identifier format of any NGSI entity owner",
-          "type":"array"
+          "type":"array",
           "items":{
             "type": "string",
-            "format": "uri",
+            "format": "uri"
           }
+      }
     },
     "required":["id", "type"],
   "additionalProperties": false
