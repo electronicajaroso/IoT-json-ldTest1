@@ -21,7 +21,7 @@
          },
         "location": {
           "type": "geo:json",
-          "description": "location of agroCorp, ie e object with type point.. coordinates [W/E, N/S]
+          "description": "location of agroCorp, ie e object with type point.. coordinates [W/E, N/S]"
         },
          "refOwner": {
            "description": "Relationship. Owner (Person or Organization) of the item",
