@@ -1,1 +1,10 @@
-
+{
+    "id": "urn:ngsi-ld:AgriCorp:agriCorp001",
+    "type": "AgriCorp",
+    "name": "parcela1"
+    "location":{
+      "type": "Point",
+      "coordenate": [10,10]
+    }
+}
+      
