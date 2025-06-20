@@ -42,7 +42,7 @@
           "type": "string",
           "format": "uri",
           },
-    "refEndPoint": {
+    "refEndPoints": {
           "description": "RelationShip. EndPoint Identifier format of any NGSI entity provide data to device",
           "type":"array"
           "items":{
