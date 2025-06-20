@@ -100,6 +100,15 @@
         ]
       }
     }
+    "value": {
+      "type": "number",
+      "description": "valor de la temperatura en grados centigrados"
+    }
+    "dateObserved": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Property. Date of the observed entity defined by the user"
+    },
   },
   "required":["id", "type"],
   "additionalProperties": false
