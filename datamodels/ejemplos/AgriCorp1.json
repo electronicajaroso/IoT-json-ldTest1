@@ -1,12 +1,11 @@
 {
     "id": "urn:ngsi-ld:AgriCorp:agriCorp001",
     "type": "AgriCorp",
-    "name": "parcela1"
+    "name": "parcela1",
     "location":{
       "type": "Point",
-      "coordenate": [10,10]
-    }
+      "coordinates": [1,1]
+    },
     "refOwner": "urn:ngsi-ld:Owner:owner001",
     "refDevicesSoC": ["urn:ngsi-ld:DeviceSoc:devSoc001"]
 }
-      
