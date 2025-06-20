@@ -1,1 +1,6 @@
-
+{
+    "id": "urn:ngsi-ld:Owner:owner001",
+    "type": "Owner",
+    "Name": "Juan",
+    "refAgriCorps": ["urn:ngsi-ld:AgriCorp:agriCorp001"]
+}
