@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://smart-data-models.github.io/dataModel.Device/device-schema.json",
+  "$schemaVersion": "0.0.7",
+  "title": " Smart data Models - DeviceSoC schema",
+  "description": "Common definitions to describe Device and Device Model schemas",
+  "type":"object",
+  "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "DeviceSoC"
+          ],
+          "description": "Property. NGSI Entity type. It has to be Device"
+        },
+    "id":{
+          "type": "string",
+          "format": "uri",
+          "description": "Property. Identifier format of any NGSI entity"
+        },
+    "modelName": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text. Device's model name"
+        },
+    "ipAddress": {
+          "type": "array",
+          "description": "Property. Model:'https://schema.org/Text'. List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address",
+          "items": {
+            "type": "string",
+            "oneOf": [
+              {
+                "format": "ipv4"
+              },
+              {
+                "format": "ipv6"
+              }
+            ]
+          }
+        },
+    "refCorp": {
+          "description": "RelationShip. Corp Identifier format of any NGSI entity where Device is fitted",
+          "type": "string",
+          "format": "uri",
+          },
+    "refEndPoint": {
+          "description": "RelationShip. EndPoint Identifier format of any NGSI entity provide data to device",
+          "type":"array"
+          "items":{
+            "type": "string",
+            "format": "uri",
+          }
+    },
+    "required":["id", "type"],
+  "additionalProperties": false
+  }
+    
