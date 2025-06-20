@@ -1,1 +1,6 @@
-a
+{
+    "id": "urn:ngsi-ld:DeviceSoc:devSoc001",
+    "type": "DeviceSoc",
+    "modelName": "ESP32",
+    "ipAddress": "192.168.1.10/24"
+}
