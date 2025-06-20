@@ -109,6 +109,11 @@
       "format": "date-time",
       "description": "Property. Date of the observed entity defined by the user"
     },
+    "refDeviceSoc": {
+        "type": "string",
+        "format": "uri",
+        "description": "Property. Identifier format of any NGSI entity"
+    },
   },
   "required":["id", "type"],
   "additionalProperties": false
