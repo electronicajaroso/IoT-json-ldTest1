@@ -2,5 +2,7 @@
     "id": "urn:ngsi-ld:DeviceSoc:devSoc001",
     "type": "DeviceSoc",
     "modelName": "ESP32",
-    "ipAddress": "192.168.1.10/24"
+    "ipAddress": "192.168.1.10/24",
+    "refCorp": "urn:ngsi-ld:AgriCorp:agriCorp001",
+    "refEndPoints": ["urn:ngsi-ld:EndPoint:endp001"]    
 }
